@@ -7,7 +7,7 @@ from nltk.stem import PorterStemmer
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 import nltk
 nltk.download('stopwords')
-nltk.download('punkt')
+nltk.download('punkt_tab')
 tf = pickle.load(open("artifacts/tf.pkl","rb"))
 stop_words = stopwords.words('english')
 negative_verbs = ['not', 'no', 'doesnt', 'dont', 'didnt', 'wasnt', 'werent', 'hasnt', 'havent', 'isnt', 'arent', 'werent']
